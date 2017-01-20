@@ -1,8 +1,8 @@
 app.controller('GuideCtrl', function($scope, $http, guideFactory){
     guideFactory
     .getGuide()
-    .then((val)=>{
-            $scope.guide = val
+    .then((res)=>{
+            $scope.guide = res
             console.log("$scope.guide", $scope.guide);
     })
 
